@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot API</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <h1>英雄聯盟韓服 ID 戰積查詢</h1>
+    <!-- 參考選手 -->
+    <h2>參考選手資料</h2>
+    <section class="playerInfomation">
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/T1-Zeus.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>T1 Zeus</p>
+                <p>ID：<span class="playerID">God Thunder</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/T1%20%EC%A0%9C%EC%9A%B0%EC%8A%A4-0102">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/T1-Oner.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>T1 Oner</p>
+                <p>ID：<span class="playerID">대머리 까까랏</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/Oner-KR2222">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/T1-Faker.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>T1 Faker</p>
+                <p>ID：<span class="playerID">Hide on bush</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/Hide%20on%20bush-KR1">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/T1-Gumayusi.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>T1 Gumayusi</p>
+                <p>ID：<span class="playerID">T1 Gumayusi</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/T1%20Gumayusi-KR1">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/T1-Keria.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>T1 Keria</p>
+                <p>ID：<span class="playerID">유사매</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/%EC%97%AD%EC%B2%9C%EA%B4%B4-Ker10">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/KT-Deft.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>KT Deft</p>
+                <p>ID：<span class="playerID">노란 쏨뱅이</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/Deft-8366">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/HLE-Viper.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>HLE Viper</p>
+                <p>ID：<span class="playerID">viper3</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/Viper-G170">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/GEN-Canyon.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>GEN Canyon</p>
+                <p>ID：<span class="playerID">JUGKlNG</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/JUGKlNG-KR1">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/GEN-Canyon.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>GEN Chovy</p>
+                <p>ID：<span class="playerID">허거덩</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/JUGKlNG-KR1">查看 op.gg →</a></p>
+            </div>
+        </div>
+        <div class="playerInfomationBlock">
+            <div class="playerPicture">
+                <img src="./img/player/DK-ShowMaker.webp" alt="">
+            </div>
+            <div class="playerDetail">
+                <p>DK ShowMaker</p>
+                <p>ID：<span class="playerID">DK ShowMaker</span></p>
+                <p><a href="https://www.op.gg/summoners/kr/DK%20ShowMaker-KR1">查看 op.gg →</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- 輸入 ID 選擇區域 -->
+    <section class="enter">
+        <div class="enterSummoner">
+            <input type="text" class="enterSummonerName" placeholder="請輸入 ID">
+        </div>
+        <div class="search">
+            <input type="button" class="searchButton" value="Search" onclick="SearchSummoner()">
+        </div>
+    </section>
+    <!-- ID 基本資料 -->
+    <section class="information">
+        <div class="informationBlock">
+            <div class="summonerProfilePicure">
+                <img class="summonerProfilePicure_img" src="">
+            </div>
+            <div class="summonerInformation">
+                <div class="summonerName">ID：<span class="summonerNameData"></span></div>
+                <div class="summonerLevel">Level：<span class="summonerLevelData"></span></div>
+                <div class="gameWins">勝場：<span class="gameWinsNumber"></span></div>
+                <div class="gameLosses">敗場：<span class="gameLossesNumber"></span></div>
+                <div class="gameWinratio">勝率：<span class="gameWinratioNumber"></span></div>
+                <div class="gameDivision">牌位：<span class="gameTier"></span>&nbsp;&nbsp;<span class="gameScore"></span>分
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="total">
+        <h3>近 10 場英雄統計資料</h3>
+        <div class="statistics"></div>
+    </section>
+    <!-- 對戰紀錄 -->
+    <section class="record" style="display: none;">
+    </section>
+</body>
+
+</html>
