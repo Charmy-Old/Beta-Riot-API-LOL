@@ -1,15 +1,5 @@
 # 英雄聯盟韓服戰績查詢
 
-### **[作品連結](https://charmying.github.io/Riot-API-LOL/)**
-
-###### <br/>
-
-
-
-
-
-## Skills
-
 - **HTML**
 
 - **CSS**
@@ -19,10 +9,6 @@
 - **Fetch 語法串接 Riot API**
 
 ###### <br/>
-
-
-
-
 
 ## Introduce
 
